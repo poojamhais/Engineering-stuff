@@ -77,7 +77,7 @@ add_text(slide, "MATOSHRI EDUCATION SOCIETY'S", Inches(0), Inches(0.6), Inches(1
          font_size=16, color=CYAN, bold=True, alignment=PP_ALIGN.CENTER)
 add_text(slide, "MIT POLYTECHNIC & ENGINEERING, YEOLA", Inches(0), Inches(1.0), Inches(13.333), Inches(0.5),
          font_size=20, color=CYAN, bold=True, alignment=PP_ALIGN.CENTER)
-add_text(slide, "Department of Electrical Engineering", Inches(0), Inches(1.45), Inches(13.333), Inches(0.4),
+add_text(slide, "Department of Electronics and Telecommunication Engineering", Inches(0), Inches(1.45), Inches(13.333), Inches(0.4),
          font_size=14, color=MUTED, alignment=PP_ALIGN.CENTER)
 
 add_text(slide, "OHM'S LAW", Inches(0), Inches(2.2), Inches(13.333), Inches(1.2),
@@ -112,7 +112,7 @@ add_text(slide, "What is Ohm's Law?", Inches(0.8), Inches(0.4), Inches(7), Inche
 txBox = slide.shapes.add_textbox(Inches(0.8), Inches(1.2), Inches(6.5), Inches(2.5))
 tf = txBox.text_frame; tf.word_wrap = True
 p = tf.paragraphs[0]
-p.text = "Ohm's Law is the most fundamental relationship in electrical engineering. Discovered by Georg Simon Ohm in 1827, it describes how voltage, current, and resistance are interrelated in an electrical circuit."
+p.text = "Ohm's Law is the most fundamental relationship in electronics and telecommunication engineering. Discovered by Georg Simon Ohm in 1827, it describes how voltage, current, and resistance are interrelated in an electrical circuit."
 p.font.size = Pt(16); p.font.color.rgb = MUTED; p.font.name = 'Calibri'; p.space_after = Pt(12)
 add_para(tf, "V = I × R", font_size=32, color=GOLD, bold=True, alignment=PP_ALIGN.LEFT, space_after=Pt(16))
 
@@ -323,7 +323,7 @@ for i, (name, roll) in enumerate(names):
     add_text(slide, name, x, Inches(5.25), Inches(2.8), Inches(0.45), font_size=14, color=WHITE, bold=True, alignment=PP_ALIGN.CENTER)
     add_text(slide, roll, x, Inches(5.65), Inches(2.8), Inches(0.35), font_size=11, color=MUTED, alignment=PP_ALIGN.CENTER)
 
-add_text(slide, "MIT Polytechnic & Engineering, Yeola • Electrical Engineering", Inches(0), Inches(6.4), Inches(13.333), Inches(0.4),
+add_text(slide, "MIT Polytechnic & Engineering, Yeola • Electronics and Telecommunication Engineering", Inches(0), Inches(6.4), Inches(13.333), Inches(0.4),
          font_size=13, color=MUTED, alignment=PP_ALIGN.CENTER)
 
 # Bottom accent line

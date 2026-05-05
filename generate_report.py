@@ -30,7 +30,7 @@ class Report(FPDF):
         self.cell(0, 6, "Yeola", align='C', new_x='LMARGIN', new_y='NEXT')
         self.set_font('Helvetica', '', 9)
         self.set_text_color(80,80,80)
-        self.cell(0, 5, "Department of Electrical Engineering", align='C', new_x='LMARGIN', new_y='NEXT')
+        self.cell(0, 5, "Department of Electronics and Telecommunication Engineering", align='C', new_x='LMARGIN', new_y='NEXT')
         self.ln(3)
         self.set_draw_color(0,128,0)
         self.set_line_width(0.5)
@@ -112,7 +112,7 @@ pdf.cell(0, 10, "Vision", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.set_font('Helvetica', '', 11)
 pdf.set_text_color(0,0,0)
 pdf.set_x(20)
-pdf.multi_cell(170, 6, "To develop skilled and competent professionals in Electrical Engineering who contribute to the technological advancement of society.")
+pdf.multi_cell(170, 6, "To develop skilled and competent professionals in Electronics and Telecommunication Engineering who contribute to the technological advancement of society.")
 pdf.ln(6)
 pdf.set_font('Helvetica', 'BU', 16)
 pdf.set_text_color(0,128,0)
@@ -132,7 +132,7 @@ pdf.write_page_num("i")
 start_page(pdf)
 pdf.set_font('Helvetica', 'B', 14)
 pdf.set_text_color(0,0,0)
-pdf.cell(0, 10, "DEPARTMENT OF ELECTRICAL ENGINEERING", align='C', new_x='LMARGIN', new_y='NEXT')
+pdf.cell(0, 10, "DEPARTMENT OF ELECTRONICS AND TELECOMMUNICATION ENGINEERING", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.ln(4)
 pdf.set_font('Helvetica', 'BU', 16)
 pdf.set_text_color(0,128,0)
@@ -140,7 +140,7 @@ pdf.cell(0, 10, "Vision", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.set_font('Helvetica', '', 11)
 pdf.set_text_color(0,0,0)
 pdf.set_x(20)
-pdf.multi_cell(170, 6, "To become a center of excellence in Electrical Engineering education, producing industry-ready professionals.")
+pdf.multi_cell(170, 6, "To become a center of excellence in Electronics and Telecommunication Engineering education, producing industry-ready professionals.")
 pdf.ln(6)
 pdf.set_font('Helvetica', 'BU', 16)
 pdf.set_text_color(0,128,0)
@@ -148,7 +148,7 @@ pdf.cell(0, 10, "Mission", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.set_font('Helvetica', '', 11)
 pdf.set_text_color(0,0,0)
 for m in [
-    "To provide strong fundamental knowledge in electrical engineering principles.",
+    "To provide strong fundamental knowledge in electronics and telecommunication engineering principles.",
     "To develop problem-solving abilities and analytical skills.",
     "To foster research aptitude and encourage innovative project development.",
     "To build industry-academia partnerships for better employability."
@@ -186,7 +186,7 @@ pdf.cell(0, 8, "Miss. BELDAR G.N.", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.ln(12)
 pdf.set_font('Helvetica', '', 11)
 pdf.set_text_color(100,60,0)
-pdf.cell(0, 6, "Department of Electrical Engineering", align='C', new_x='LMARGIN', new_y='NEXT')
+pdf.cell(0, 6, "Department of Electronics and Telecommunication Engineering", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.set_text_color(0,0,0)
 pdf.cell(0, 6, "Academic Year: 2025-2026", align='C', new_x='LMARGIN', new_y='NEXT')
 pdf.write_page_num("iii")
@@ -203,7 +203,7 @@ pdf.ln(8)
 pdf.set_font('Helvetica', '', 12)
 pdf.set_text_color(0,0,0)
 pdf.set_x(20)
-pdf.multi_cell(170, 7, 'This is to certify that the project report entitled "OHM\'S LAW" has been successfully completed by the following students of First Year Electrical Engineering:')
+pdf.multi_cell(170, 7, 'This is to certify that the project report entitled "OHM\'S LAW" has been successfully completed by the following students of First Year Electronics and Telecommunication Engineering:')
 pdf.ln(4)
 pdf.set_font('Helvetica', 'B', 12)
 for roll, name in students:
@@ -229,8 +229,8 @@ pdf.ln(8)
 pdf.set_font('Helvetica', '', 12)
 for p in [
     "We would like to express our sincere gratitude to our project guide Miss. Beldar G.N. for her valuable guidance, constant encouragement, and support throughout the completion of this project.",
-    "We are also thankful to the Head of the Department of Electrical Engineering and the Principal of MIT Polytechnic and Engineering, Yeola, for providing us with the necessary facilities and resources.",
-    "We extend our heartfelt thanks to all the faculty members of the Electrical Engineering department for their cooperation and assistance.",
+    "We are also thankful to the Head of the Department of Electronics and Telecommunication Engineering and the Principal of MIT Polytechnic and Engineering, Yeola, for providing us with the necessary facilities and resources.",
+    "We extend our heartfelt thanks to all the faculty members of the Electronics and Telecommunication Engineering department for their cooperation and assistance.",
     "Finally, we are grateful to our families and friends for their unwavering support and motivation during this project work."
 ]:
     pdf.set_x(20); pdf.multi_cell(170, 7, p); pdf.ln(4)
@@ -276,7 +276,7 @@ pdf.write_page_num("vi")
 # 1. Abstract
 start_page(pdf, "Abstract", is_content=True)
 write_body(pdf, [
-    "Ohm's Law is one of the most fundamental principles in electrical engineering and physics. It establishes a linear relationship between voltage, current, and resistance in an electrical circuit.",
+    "Ohm's Law is one of the most fundamental principles in electronics and telecommunication engineering and physics. It establishes a linear relationship between voltage, current, and resistance in an electrical circuit.",
     "This project report provides a comprehensive study of Ohm's Law, including its mathematical formulation (V = IR), its physical interpretation through the water analogy, practical applications in circuit design, and its limitations when applied to non-linear devices.",
     "The report is intended for first-year engineering students to build a strong foundational understanding of electrical circuit analysis. Interactive simulations and solved numerical examples are included to reinforce the theoretical concepts.",
     "The key objective of this project is to present Ohm's Law in an engaging and interactive manner, making it accessible to all students regardless of their prior background in physics or electronics."
@@ -288,7 +288,7 @@ start_page(pdf, "Introduction", is_content=True)
 write_body(pdf, [
     "Electricity is an essential part of modern life, powering everything from household appliances to industrial machinery. Understanding the basic laws governing electrical circuits is crucial for any engineering student.",
     "Ohm's Law, discovered by German physicist Georg Simon Ohm in 1827, is the cornerstone of circuit theory. It states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points, provided the temperature remains constant.",
-    "Georg Simon Ohm published his findings in his book 'Die galvanische Kette, mathematisch bearbeitet' (The Galvanic Circuit Investigated Mathematically). Despite initial skepticism from the scientific community, his work was eventually recognized as a foundational contribution to electrical engineering.",
+    "Georg Simon Ohm published his findings in his book 'Die galvanische Kette, mathematisch bearbeitet' (The Galvanic Circuit Investigated Mathematically). Despite initial skepticism from the scientific community, his work was eventually recognized as a foundational contribution to electronics and telecommunication engineering.",
     "This report explores Ohm's Law in depth, from its basic statement to its practical applications and limitations."
 ])
 add_image(pdf, "georg_ohm.png")
@@ -412,7 +412,7 @@ pdf.write_page_num(str(content_pg[0]))
 # 10. Conclusion
 start_page(pdf, "Conclusion", is_content=True)
 write_body(pdf, [
-    "Ohm's Law (V = IR) is the most fundamental and widely used law in electrical engineering. Through this project, we have explored its definition, mathematical formulation, physical interpretation through the water analogy, and practical applications.",
+    "Ohm's Law (V = IR) is the most fundamental and widely used law in electronics and telecommunication engineering. Through this project, we have explored its definition, mathematical formulation, physical interpretation through the water analogy, and practical applications.",
     "The key takeaways from this study are:",
     "* Voltage, current, and resistance are linearly related in ohmic conductors.",
     "* The V-I-R triangle provides a quick reference for solving circuit problems.",
